@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		842910BF19216BBB00AB4786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842910BE19216BBB00AB4786 /* Foundation.framework */; };
+		842910C119216BBB00AB4786 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842910C019216BBB00AB4786 /* CoreGraphics.framework */; };
+		842910C319216BBB00AB4786 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842910C219216BBB00AB4786 /* UIKit.framework */; };
+		842910C919216BBB00AB4786 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 842910C719216BBB00AB4786 /* InfoPlist.strings */; };
+		842910CB19216BBB00AB4786 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 842910CA19216BBB00AB4786 /* main.m */; };
+		842910CF19216BBB00AB4786 /* KMFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 842910CE19216BBB00AB4786 /* KMFAppDelegate.m */; };
+		842910D219216BBB00AB4786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842910D019216BBB00AB4786 /* Main.storyboard */; };
+		842910D519216BBB00AB4786 /* KMFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842910D419216BBB00AB4786 /* KMFViewController.m */; };
+		842910D719216BBB00AB4786 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842910D619216BBB00AB4786 /* Images.xcassets */; };
+		842910DE19216BBB00AB4786 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842910DD19216BBB00AB4786 /* XCTest.framework */; };
+		842910DF19216BBB00AB4786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842910BE19216BBB00AB4786 /* Foundation.framework */; };
+		842910E019216BBB00AB4786 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842910C219216BBB00AB4786 /* UIKit.framework */; };
+		842910E819216BBB00AB4786 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 842910E619216BBB00AB4786 /* InfoPlist.strings */; };
+		842910EA19216BBB00AB4786 /* KMostFrequentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842910E919216BBB00AB4786 /* KMostFrequentTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		842910E119216BBB00AB4786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842910B319216BBB00AB4786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 842910BA19216BBB00AB4786;
+			remoteInfo = KMostFrequent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		842910BB19216BBB00AB4786 /* KMostFrequent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMostFrequent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		842910BE19216BBB00AB4786 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		842910C019216BBB00AB4786 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		842910C219216BBB00AB4786 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		842910C619216BBB00AB4786 /* KMostFrequent-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KMostFrequent-Info.plist"; sourceTree = "<group>"; };
+		842910C819216BBB00AB4786 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		842910CA19216BBB00AB4786 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		842910CC19216BBB00AB4786 /* KMostFrequent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KMostFrequent-Prefix.pch"; sourceTree = "<group>"; };
+		842910CD19216BBB00AB4786 /* KMFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMFAppDelegate.h; sourceTree = "<group>"; };
+		842910CE19216BBB00AB4786 /* KMFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMFAppDelegate.m; sourceTree = "<group>"; };
+		842910D119216BBB00AB4786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		842910D319216BBB00AB4786 /* KMFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMFViewController.h; sourceTree = "<group>"; };
+		842910D419216BBB00AB4786 /* KMFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMFViewController.m; sourceTree = "<group>"; };
+		842910D619216BBB00AB4786 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		842910DC19216BBB00AB4786 /* KMostFrequentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMostFrequentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		842910DD19216BBB00AB4786 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		842910E519216BBB00AB4786 /* KMostFrequentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KMostFrequentTests-Info.plist"; sourceTree = "<group>"; };
+		842910E719216BBB00AB4786 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		842910E919216BBB00AB4786 /* KMostFrequentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMostFrequentTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		842910B819216BBB00AB4786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842910C119216BBB00AB4786 /* CoreGraphics.framework in Frameworks */,
+				842910C319216BBB00AB4786 /* UIKit.framework in Frameworks */,
+				842910BF19216BBB00AB4786 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842910D919216BBB00AB4786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842910DE19216BBB00AB4786 /* XCTest.framework in Frameworks */,
+				842910E019216BBB00AB4786 /* UIKit.framework in Frameworks */,
+				842910DF19216BBB00AB4786 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		842910B219216BBB00AB4786 = {
+			isa = PBXGroup;
+			children = (
+				842910C419216BBB00AB4786 /* KMostFrequent */,
+				842910E319216BBB00AB4786 /* KMostFrequentTests */,
+				842910BD19216BBB00AB4786 /* Frameworks */,
+				842910BC19216BBB00AB4786 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		842910BC19216BBB00AB4786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				842910BB19216BBB00AB4786 /* KMostFrequent.app */,
+				842910DC19216BBB00AB4786 /* KMostFrequentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		842910BD19216BBB00AB4786 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				842910BE19216BBB00AB4786 /* Foundation.framework */,
+				842910C019216BBB00AB4786 /* CoreGraphics.framework */,
+				842910C219216BBB00AB4786 /* UIKit.framework */,
+				842910DD19216BBB00AB4786 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		842910C419216BBB00AB4786 /* KMostFrequent */ = {
+			isa = PBXGroup;
+			children = (
+				842910CD19216BBB00AB4786 /* KMFAppDelegate.h */,
+				842910CE19216BBB00AB4786 /* KMFAppDelegate.m */,
+				842910D019216BBB00AB4786 /* Main.storyboard */,
+				842910D319216BBB00AB4786 /* KMFViewController.h */,
+				842910D419216BBB00AB4786 /* KMFViewController.m */,
+				842910D619216BBB00AB4786 /* Images.xcassets */,
+				842910C519216BBB00AB4786 /* Supporting Files */,
+			);
+			path = KMostFrequent;
+			sourceTree = "<group>";
+		};
+		842910C519216BBB00AB4786 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				842910C619216BBB00AB4786 /* KMostFrequent-Info.plist */,
+				842910C719216BBB00AB4786 /* InfoPlist.strings */,
+				842910CA19216BBB00AB4786 /* main.m */,
+				842910CC19216BBB00AB4786 /* KMostFrequent-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		842910E319216BBB00AB4786 /* KMostFrequentTests */ = {
+			isa = PBXGroup;
+			children = (
+				842910E919216BBB00AB4786 /* KMostFrequentTests.m */,
+				842910E419216BBB00AB4786 /* Supporting Files */,
+			);
+			path = KMostFrequentTests;
+			sourceTree = "<group>";
+		};
+		842910E419216BBB00AB4786 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				842910E519216BBB00AB4786 /* KMostFrequentTests-Info.plist */,
+				842910E619216BBB00AB4786 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		842910BA19216BBB00AB4786 /* KMostFrequent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 842910ED19216BBB00AB4786 /* Build configuration list for PBXNativeTarget "KMostFrequent" */;
+			buildPhases = (
+				842910B719216BBB00AB4786 /* Sources */,
+				842910B819216BBB00AB4786 /* Frameworks */,
+				842910B919216BBB00AB4786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KMostFrequent;
+			productName = KMostFrequent;
+			productReference = 842910BB19216BBB00AB4786 /* KMostFrequent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		842910DB19216BBB00AB4786 /* KMostFrequentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 842910F019216BBB00AB4786 /* Build configuration list for PBXNativeTarget "KMostFrequentTests" */;
+			buildPhases = (
+				842910D819216BBB00AB4786 /* Sources */,
+				842910D919216BBB00AB4786 /* Frameworks */,
+				842910DA19216BBB00AB4786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				842910E219216BBB00AB4786 /* PBXTargetDependency */,
+			);
+			name = KMostFrequentTests;
+			productName = KMostFrequentTests;
+			productReference = 842910DC19216BBB00AB4786 /* KMostFrequentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		842910B319216BBB00AB4786 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KMF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = stevenschou;
+				TargetAttributes = {
+					842910DB19216BBB00AB4786 = {
+						TestTargetID = 842910BA19216BBB00AB4786;
+					};
+				};
+			};
+			buildConfigurationList = 842910B619216BBB00AB4786 /* Build configuration list for PBXProject "KMostFrequent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 842910B219216BBB00AB4786;
+			productRefGroup = 842910BC19216BBB00AB4786 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				842910BA19216BBB00AB4786 /* KMostFrequent */,
+				842910DB19216BBB00AB4786 /* KMostFrequentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		842910B919216BBB00AB4786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842910D719216BBB00AB4786 /* Images.xcassets in Resources */,
+				842910C919216BBB00AB4786 /* InfoPlist.strings in Resources */,
+				842910D219216BBB00AB4786 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842910DA19216BBB00AB4786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842910E819216BBB00AB4786 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		842910B719216BBB00AB4786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842910D519216BBB00AB4786 /* KMFViewController.m in Sources */,
+				842910CB19216BBB00AB4786 /* main.m in Sources */,
+				842910CF19216BBB00AB4786 /* KMFAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842910D819216BBB00AB4786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842910EA19216BBB00AB4786 /* KMostFrequentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		842910E219216BBB00AB4786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 842910BA19216BBB00AB4786 /* KMostFrequent */;
+			targetProxy = 842910E119216BBB00AB4786 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		842910C719216BBB00AB4786 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				842910C819216BBB00AB4786 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		842910D019216BBB00AB4786 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				842910D119216BBB00AB4786 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		842910E619216BBB00AB4786 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				842910E719216BBB00AB4786 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		842910EB19216BBB00AB4786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		842910EC19216BBB00AB4786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		842910EE19216BBB00AB4786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KMostFrequent/KMostFrequent-Prefix.pch";
+				INFOPLIST_FILE = "KMostFrequent/KMostFrequent-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		842910EF19216BBB00AB4786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KMostFrequent/KMostFrequent-Prefix.pch";
+				INFOPLIST_FILE = "KMostFrequent/KMostFrequent-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		842910F119216BBB00AB4786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KMostFrequent.app/KMostFrequent";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KMostFrequent/KMostFrequent-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KMostFrequentTests/KMostFrequentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		842910F219216BBB00AB4786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KMostFrequent.app/KMostFrequent";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KMostFrequent/KMostFrequent-Prefix.pch";
+				INFOPLIST_FILE = "KMostFrequentTests/KMostFrequentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		842910B619216BBB00AB4786 /* Build configuration list for PBXProject "KMostFrequent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				842910EB19216BBB00AB4786 /* Debug */,
+				842910EC19216BBB00AB4786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		842910ED19216BBB00AB4786 /* Build configuration list for PBXNativeTarget "KMostFrequent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				842910EE19216BBB00AB4786 /* Debug */,
+				842910EF19216BBB00AB4786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		842910F019216BBB00AB4786 /* Build configuration list for PBXNativeTarget "KMostFrequentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				842910F119216BBB00AB4786 /* Debug */,
+				842910F219216BBB00AB4786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 842910B319216BBB00AB4786 /* Project object */;
+}
