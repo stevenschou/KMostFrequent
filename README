@@ -1,0 +1,100 @@
+Steven Chou
+<stevenschou@gmail.com>
+Evernote Interview
+
+-------------------------------------------
+Problem Statement:
+-------------------------------------------
+Write a function that takes two parameters:
+(1) a string representing the contents of a text document
+(2) an integer providing the number of items to return
+
+Implement the function such that it returns a list of strings ordered by word frequency, 
+the most frequently occurring word first. 
+
+Performance Constraints:
+Your solution must run in O(n) time where n is the number of characters in the document.
+
+-------------------------------------------
+Solution
+-------------------------------------------
+
+This algorithm works as follows:
+
+1) go through the entire string and keep a dictionary that maintains the counts of every
+string in the input
+2) Insert each string into a maximum value min-heap. This means that we want to keep a min
+heap where the minimum is at the root. However, we want to maintain the elements which have
+the highest frequency.
+3) do a heapsort to order the data from lowest to highest frequency, that is, remove the
+minimum and heapify to make sure the state of the heap is still good.
+4) reverse the result from (3) and return!
+
+-------------------------------------------
+Performance
+-------------------------------------------
+Lets analyze the performance of my algorithm:
+
+Let n be the size of the input string.
+Let k be the number of elements we want to return.
+
+1) go through the entire string and keep a dictionary that maintains the counts of every
+string in the input
+
+O(n); insertion into the dictionary is O(1).
+
+2) Insert each string into a maximum value min-heap. This means that we want to keep a min
+heap where the minimum is at the root. However, we want to maintain the elements who have
+the highest frequency.
+
+O(n*log(k)); inserting into the heap takes log(k) time and we must do that for every 
+string in the dictionary
+
+3) do a heapsort to order the data from highest to lowest frequency, that is, remove the
+minimum and heapify to make sure the state of the heap is still good.
+
+O(k*log(k)); our heap has at most k elements in it and thus doing a heapify will take log(k)
+every time
+
+4) reverse the result from (3) and return!
+
+O(k): our array has size k.
+
+Thus to sum up:
+
+O(n + n*log(k) + k*log(k) + k)
+
+Because the size of the input will be drastically greater than the number of elements in
+heap in most large inputs (when performance runtime is more critical), k is negligible.
+Therefore, we can simplify our runtime to be:
+
+O(n + n) =~ O(n)
+
+-------------------------------------------
+Extras
+-------------------------------------------
+
+I added some unittests so you can see which cases I specifically tested as well as also
+allowing me to make sure my code works as expected.
+
+I figured because I'm interviewing for an Objective-C/iOS position, I would give the project
+a small iOS touch. Thus I wrote a small iOS app that does exactly this problem. When you
+run the app, you will see a UITextView where you can input the string. There is a UIStepper
+that allows you to change how  many elements you want in the output. When you hit 
+calculate, it will show a table view with the number of elements that you specified (or less
+if there aren't enough elements in the input string).
+
+-------------------------------------------
+Files
+-------------------------------------------
+KMFCalculator.* - the calculator that actually contains the function that takes a string
+and a number and outputs a NSArray of strings with the intended output of most frequent
+elements.
+
+KMFMinHeap.* - the min heap data structure that I wrote - I was deciding between writing
+my own heap or using the CFBinaryHeap data structure. However, I thought writing my own
+would be good practice and it wasn't too much code; it also allowed me to control exactly
+what I wanted the heap to do (like not got over the intended size and have the correct 
+logic when dealing with extra elements). Also, I didn't have to wrap all my objects
+in C-structs which is nice.
+

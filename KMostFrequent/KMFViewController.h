@@ -2,12 +2,17 @@
 //  KMFViewController.h
 //  KMostFrequent
 //
-//  Created by Steven Chou on 5/12/14.
-//  Copyright (c) 2014 stevenschou. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
-@interface KMFViewController : UIViewController
+@interface KMFViewController : UIViewController<UITextViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITextView *inputTextView;
+
+@property (strong, nonatomic) IBOutlet UILabel *inputFrequentLabel;
+
+@property (strong, nonatomic) IBOutlet UIStepper *inputFrequentStepper;
+
+@property (strong, nonatomic) IBOutlet UIButton *calculateButton;
 
 @end

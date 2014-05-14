@@ -21,6 +21,11 @@
 		842910E019216BBB00AB4786 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842910C219216BBB00AB4786 /* UIKit.framework */; };
 		842910E819216BBB00AB4786 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 842910E619216BBB00AB4786 /* InfoPlist.strings */; };
 		842910EA19216BBB00AB4786 /* KMostFrequentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842910E919216BBB00AB4786 /* KMostFrequentTests.m */; };
+		842910F619216EAD00AB4786 /* KMFMinHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = 842910F519216EAD00AB4786 /* KMFMinHeap.m */; };
+		842910F91921A3C600AB4786 /* KMFCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 842910F81921A3C600AB4786 /* KMFCalculator.m */; };
+		842910FB1921AFBA00AB4786 /* KMFMinHeapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842910FA1921AFBA00AB4786 /* KMFMinHeapTests.m */; };
+		84492DEA1921C45D000E8209 /* KMFCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84492DE91921C45D000E8209 /* KMFCalculatorTests.m */; };
+		84492DED192296A5000E8209 /* KMFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84492DEC192296A5000E8209 /* KMFTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 		842910E519216BBB00AB4786 /* KMostFrequentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KMostFrequentTests-Info.plist"; sourceTree = "<group>"; };
 		842910E719216BBB00AB4786 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		842910E919216BBB00AB4786 /* KMostFrequentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMostFrequentTests.m; sourceTree = "<group>"; };
+		842910F419216EAD00AB4786 /* KMFMinHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMFMinHeap.h; path = Heap/KMFMinHeap.h; sourceTree = "<group>"; };
+		842910F519216EAD00AB4786 /* KMFMinHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMFMinHeap.m; path = Heap/KMFMinHeap.m; sourceTree = "<group>"; };
+		842910F71921A3C600AB4786 /* KMFCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMFCalculator.h; sourceTree = "<group>"; };
+		842910F81921A3C600AB4786 /* KMFCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMFCalculator.m; sourceTree = "<group>"; };
+		842910FA1921AFBA00AB4786 /* KMFMinHeapTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMFMinHeapTests.m; sourceTree = "<group>"; };
+		84492DE91921C45D000E8209 /* KMFCalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMFCalculatorTests.m; sourceTree = "<group>"; };
+		84492DEB192296A5000E8209 /* KMFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMFTableViewController.h; sourceTree = "<group>"; };
+		84492DEC192296A5000E8209 /* KMFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMFTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +125,16 @@
 		842910C419216BBB00AB4786 /* KMostFrequent */ = {
 			isa = PBXGroup;
 			children = (
+				842910F71921A3C600AB4786 /* KMFCalculator.h */,
+				842910F81921A3C600AB4786 /* KMFCalculator.m */,
+				842910F319216E8200AB4786 /* Heap */,
 				842910CD19216BBB00AB4786 /* KMFAppDelegate.h */,
 				842910CE19216BBB00AB4786 /* KMFAppDelegate.m */,
 				842910D019216BBB00AB4786 /* Main.storyboard */,
 				842910D319216BBB00AB4786 /* KMFViewController.h */,
 				842910D419216BBB00AB4786 /* KMFViewController.m */,
+				84492DEB192296A5000E8209 /* KMFTableViewController.h */,
+				84492DEC192296A5000E8209 /* KMFTableViewController.m */,
 				842910D619216BBB00AB4786 /* Images.xcassets */,
 				842910C519216BBB00AB4786 /* Supporting Files */,
 			);
@@ -137,7 +155,9 @@
 		842910E319216BBB00AB4786 /* KMostFrequentTests */ = {
 			isa = PBXGroup;
 			children = (
+				84492DE91921C45D000E8209 /* KMFCalculatorTests.m */,
 				842910E919216BBB00AB4786 /* KMostFrequentTests.m */,
+				842910FA1921AFBA00AB4786 /* KMFMinHeapTests.m */,
 				842910E419216BBB00AB4786 /* Supporting Files */,
 			);
 			path = KMostFrequentTests;
@@ -150,6 +170,15 @@
 				842910E619216BBB00AB4786 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		842910F319216E8200AB4786 /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				842910F419216EAD00AB4786 /* KMFMinHeap.h */,
+				842910F519216EAD00AB4786 /* KMFMinHeap.m */,
+			);
+			name = Heap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84492DED192296A5000E8209 /* KMFTableViewController.m in Sources */,
+				842910F619216EAD00AB4786 /* KMFMinHeap.m in Sources */,
 				842910D519216BBB00AB4786 /* KMFViewController.m in Sources */,
+				842910F91921A3C600AB4786 /* KMFCalculator.m in Sources */,
 				842910CB19216BBB00AB4786 /* main.m in Sources */,
 				842910CF19216BBB00AB4786 /* KMFAppDelegate.m in Sources */,
 			);
@@ -260,7 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84492DEA1921C45D000E8209 /* KMFCalculatorTests.m in Sources */,
 				842910EA19216BBB00AB4786 /* KMostFrequentTests.m in Sources */,
+				842910FB1921AFBA00AB4786 /* KMFMinHeapTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +491,7 @@
 				842910EF19216BBB00AB4786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		842910F019216BBB00AB4786 /* Build configuration list for PBXNativeTarget "KMostFrequentTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +500,7 @@
 				842910F219216BBB00AB4786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

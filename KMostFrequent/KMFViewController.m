@@ -2,11 +2,9 @@
 //  KMFViewController.m
 //  KMostFrequent
 //
-//  Created by Steven Chou on 5/12/14.
-//  Copyright (c) 2014 stevenschou. All rights reserved.
-//
 
 #import "KMFViewController.h"
+#import "KMFTableViewController.h"
 
 @interface KMFViewController ()
 
@@ -17,13 +15,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    _inputTextView.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)valueChanged:(UIStepper *)sender {
+    double value = [sender value];
+    
+    [_inputFrequentLabel setText:[NSString stringWithFormat:@"%d", (int)value]];
+}
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    
+    // look for newlines to see if we should dismiss the keyboard
+    if([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    return YES;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if([[segue destinationViewController] isKindOfClass:[KMFTableViewController class]]) {
+        KMFTableViewController *vc = (KMFTableViewController *)[segue destinationViewController];
+        vc.inputString = _inputTextView.text;
+        vc.numFrequentWords = _inputFrequentStepper.value;
+    }
 }
 
 @end
