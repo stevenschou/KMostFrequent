@@ -68,32 +68,3 @@ heap in most large inputs (when performance runtime is more critical), k is negl
 Therefore, we can simplify our runtime to be:
 
 O(n + n) =~ O(n)
-
--------------------------------------------
-Extras
--------------------------------------------
-
-I added some unittests so you can see which cases I specifically tested as well as also
-allowing me to make sure my code works as expected.
-
-I figured because I'm interviewing for an Objective-C/iOS position, I would give the project
-a small iOS touch. Thus I wrote a small iOS app that does exactly this problem. When you
-run the app, you will see a UITextView where you can input the string. There is a UIStepper
-that allows you to change how  many elements you want in the output. When you hit 
-calculate, it will show a table view with the number of elements that you specified (or less
-if there aren't enough elements in the input string).
-
--------------------------------------------
-Files
--------------------------------------------
-KMFCalculator.* - the calculator that actually contains the function that takes a string
-and a number and outputs a NSArray of strings with the intended output of most frequent
-elements.
-
-KMFMinHeap.* - the min heap data structure that I wrote - I was deciding between writing
-my own heap or using the CFBinaryHeap data structure. However, I thought writing my own
-would be good practice and it wasn't too much code; it also allowed me to control exactly
-what I wanted the heap to do (like not got over the intended size and have the correct 
-logic when dealing with extra elements). Also, I didn't have to wrap all my objects
-in C-structs which is nice.
-
