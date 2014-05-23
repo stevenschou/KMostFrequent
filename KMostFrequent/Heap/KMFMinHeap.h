@@ -21,7 +21,7 @@ typedef NSComparisonResult (^KMFHEAP_ORDER_PROPERTY)(KMFMinHeapElement *o1, KMFM
 @interface KMFMinHeap : NSObject
 
 // default initializer
--(id)initWithSize:(NSUInteger)size heapOrderProperty:(KMFHEAP_ORDER_PROPERTY)heapOrderProperty;
+-(id)initWithMaxSize:(NSUInteger)size heapOrderProperty:(KMFHEAP_ORDER_PROPERTY)heapOrderProperty;
 
 // an immutable array of the strings currently in the heap in sorted order (largest first)
 -(NSArray *)elementsSorted;

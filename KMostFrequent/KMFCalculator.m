@@ -10,7 +10,7 @@
 
 -(NSArray *)calculateKMostFrequent:(NSString *)textInput numberOfElements:(NSUInteger)numElements
 {
-    KMFMinHeap *mh = [[KMFMinHeap alloc] initWithSize:numElements heapOrderProperty:^NSComparisonResult(KMFMinHeapElement *o1, KMFMinHeapElement *o2) {
+    KMFMinHeap *mh = [[KMFMinHeap alloc] initWithMaxSize:numElements heapOrderProperty:^NSComparisonResult(KMFMinHeapElement *o1, KMFMinHeapElement *o2) {
             if(o1.integerValue < o2.integerValue) {
                 return NSOrderedAscending;
             }
