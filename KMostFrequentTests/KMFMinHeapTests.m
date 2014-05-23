@@ -20,7 +20,7 @@
 - (void)setUp
 {
     [super setUp];
-    _minHeap = [[KMFMinHeap alloc] initWithSize:5 heapOrderProperty:
+    _minHeap = [[KMFMinHeap alloc] initWithMaxSize:5 heapOrderProperty:
                        ^NSComparisonResult(KMFMinHeapElement *o1, KMFMinHeapElement *o2) {
                            if(o1.integerValue < o2.integerValue) {
                                return NSOrderedAscending;
