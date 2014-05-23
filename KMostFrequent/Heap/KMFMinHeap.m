@@ -46,7 +46,8 @@
 -(id)initWithSize:(NSUInteger)size heapOrderProperty:(KMFHEAP_ORDER_PROPERTY)heapOrderProperty
 {
     if(self = [super init]) {
-        _heap = [[NSMutableArray alloc] initWithCapacity:size];
+        // don't use initWithCapacity here. We might not need all of the space given
+        _heap = [[NSMutableArray alloc] init];
         _maxElements = size;
         _heapOrderProperty = heapOrderProperty;
     }
@@ -58,7 +59,8 @@
     // we need to create a copy here because we will be chanigng the original heap.
     NSMutableArray *heapCopy = [[NSMutableArray alloc] initWithArray:_heap copyItems:YES];
     
-    NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:_maxElements];
+    // don't use initWithCapacity here. We might not need all of the space given
+    NSMutableArray *result = [[NSMutableArray alloc] init];
     
     while([_heap count] > 0)
     {
